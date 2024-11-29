@@ -105,28 +105,14 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('↖️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ↗️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('Cᴏɴᴛᴀᴄᴛ ミ', url="https://t.me/Nishant_0786"),
+                InlineKeyboardButton('🎭 Mᴏᴠɪᴇ Gʀᴏᴜᴘ 🎭', url=GRP_LNK)
             ],[
-            InlineKeyboardButton('🧞‍♀️ Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔍 Gʀᴏᴜᴘ', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
+                InlineKeyboardButton('Hᴇʟᴘ 🔧', callback_data='help'),
+                InlineKeyboardButton('⍟ Aʙᴏᴜᴛ ⍟', callback_data='about')
             ],[
-            InlineKeyboardButton('🙆🏻 Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🎁 Hᴇʟᴘ++ ', callback_data='leech_url_help'),
-        ],[
-            InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
-            InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
-            ],
-        [
-            InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/real_MoviesAdda3')
-        ],
-        [
-            InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
-        ],[
-                InlineKeyboardButton(
-                    "🦋 SUBSCRIBE YT Channel 🦋", url='https://youtube.com/@LazyDeveloperr'
-                )
-            ]
-        ]
+                InlineKeyboardButton('❗𝙳𝙸𝚂𝙲𝙻𝙰𝙸𝙼𝙴𝚁❗', url="https://telegra.ph/DISCLAIMER-11-20-32")
+                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -188,7 +174,7 @@ async def start(client, message):
                                 InlineKeyboardButton('Gen Stream / Download Link', callback_data=f'generate_stream_link:{file_id}'),
                             ],
                             [
-                                InlineKeyboardButton('📌 ᴊᴏɪɴ BᴀᴄᴋUᴘ ᴄʜᴀɴɴᴇʟ 📌', url=f'https://t.me/LazyDeveloperr')
+                                InlineKeyboardButton('🦋 ᴊᴏɪɴ BᴀᴄᴋUᴘ ᴄʜᴀɴɴᴇʟ 🦋', url=f'https://t.me/Ni_Movies')
                             ]
                         ]
                     )
